@@ -1,3 +1,9 @@
 import { template } from '../../references/quantum.js';
 
-export const progress = template('', '');
+const html = `
+`;
+
+const css = `
+`;
+
+export const progress = template(html, css);
