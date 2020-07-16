@@ -11,4 +11,4 @@ export class Progress extends Component {
     static attributes = ['indeterminate', 'floating'];
 }
 
-customElement.define('quantum-progress', Progress);
+customElements.define('quantum-progress', Progress);
