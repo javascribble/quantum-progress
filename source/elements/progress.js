@@ -1,14 +1,13 @@
-import { Component, template } from '../../references/quantum.js';
 import html from '../templates/progress.js';
 
-export class Progress extends Component {
+export class Progress extends quantum.Component {
     constructor() {
         super();
     }
 
-    static template = template(html);
+    static template = quantum.template(html);
 
-    static attributes = ['indeterminate', 'floating'];
+    static get observedAttributes() { return ['indeterminate', 'floating']; }
 }
 
-customElements.define('quantum-progress', Progress);
+quantum.define('quantum-progress', Progress);
