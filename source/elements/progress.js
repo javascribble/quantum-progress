@@ -1,5 +1,7 @@
 import html from '../templates/progress.js';
 
+const { Component, template, define } = quantum;
+
 export class Progress extends Component {
     constructor() {
         super();
