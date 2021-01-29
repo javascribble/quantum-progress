@@ -1,3 +1,3 @@
-import * as progress from './elements/progress.js';
+import { Progress } from './elements/progress.js';
 
-Object.assign(quantum, progress);
+Quantum.Progress = Progress;

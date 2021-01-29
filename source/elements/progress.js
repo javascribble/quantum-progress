@@ -1,15 +1,11 @@
 import html from '../templates/progress.js';
 
-const { Component, template, define } = quantum;
-
-export class Progress extends Component {
+export class Progress extends Quantum {
     constructor() {
         super();
     }
 
-    static template = template(html);
-
     static get observedAttributes() { return ['indeterminate', 'floating']; }
 }
 
-define('quantum-progress', Progress);
+Progress.define('quantum-progress', html);
