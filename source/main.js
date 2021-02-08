@@ -1,3 +1,1 @@
-import { Progress } from './elements/progress.js';
-
-Quantum.Progress = Progress;
+import './elements/progress.js';
