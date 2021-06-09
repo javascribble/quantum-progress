@@ -1,15 +1,16 @@
 {
     "name": "@javascribble/quantum-progress",
     "description": "",
-    "version": "1.2.3",
+    "version": "1.4.0",
     "license": "MIT",
     "dependencies": {
-        "@javascribble/quantum": "^1.2.8"
+        "@javascribble/quantum": "^1.5.0"
     },
     "devDependencies": {
         "live-server": "*"
     },
     "scripts": {
+        "build": "cd ../rollup-quantum-build && npm start ../quantum-progress/source/main.js ../quantum-progress/build",
         "start": "live-server --open=/test/debug.html",
         "postversion": "npm publish --access public"
     },
