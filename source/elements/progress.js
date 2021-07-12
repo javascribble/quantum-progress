@@ -1,3 +1,5 @@
+import progress from '../templates/progress.js';
+
 export class Progress extends Quantum {
     constructor() {
         super();
@@ -5,3 +7,5 @@ export class Progress extends Quantum {
 
     static get observedAttributes() { return ['indeterminate', 'floating']; }
 }
+
+Progress.define('quantum-progress', progress);
